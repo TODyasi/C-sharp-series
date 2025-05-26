@@ -5,18 +5,17 @@ namespace C__series
     {
         static void Main(string[] args)
         {
-
-            string getGreeting = Greeting().ToString();
-            Console.WriteLine(getGreeting);
+            Greeting();
         }
 
-        static string Greeting()
+        static void Greeting()
         {
-            string greeting = "Wagwan my people in the physical world \nMy name is";
-            string name = "AuxDev";
-            string from = "\nfrom the bombaclat country of South Africa";
+            Console.WriteLine("Enter your name");
+            string name = Console.ReadLine();
+            Console.WriteLine("What would you like to say to the people");
+            string greeting = Console.ReadLine();
+            Console.WriteLine(name + " " + greeting);
 
-            return greeting + name + from;
         }
     }
 }
